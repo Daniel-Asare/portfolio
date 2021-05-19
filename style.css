@@ -1,0 +1,282 @@
+*,::after,::before{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+
+}
+
+:root{
+  --
+}
+
+body{
+ width: 100%;
+  font-family: 'Courier New', Courier, monospace;
+  background: rgba(17, 17, 17, 0.863);
+}
+.container{
+  max-width: 100%;
+}
+
+.background{
+  display: grid;
+  place-items: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(360deg,rgba(0, 0, 0, 0.438),rgba(0, 0, 0, 0.568)), url('https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') center/cover no-repeat ;
+
+}
+
+header{
+  width: 80%;
+  max-width: 600px;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  top: 1rem;
+}
+
+header a{
+  display: inline-block;
+  text-decoration: none;
+  color:rgb(212, 212, 212) ;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  /* border-radius: 5px; */
+  letter-spacing: 2px;
+
+}
+
+header a:hover{
+  border-bottom: solid 2px rgb(212, 212, 212);
+
+}
+
+.banner{
+  text-align: center;
+  text-transform: uppercase;
+  color:rgb(212, 212, 212);
+  font-size: 1.5rem;
+
+}
+.underline{
+  width: 70%;
+  margin: 0.1rem auto;
+  height: 2px;
+  background: rgb(212, 212, 212);
+}
+
+.banner-image{
+  display: block;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: solid 5px rgb(212, 212, 212);
+  margin: 1rem auto;
+}
+
+.social-btn-container{
+  margin-top: 1rem;
+}
+
+.icon{
+  font-size: 2rem;
+  color: rgb(212, 212, 212) ;
+}
+
+/* 
+===========
+ about
+===========
+*/
+
+.about{
+  width: 100%;
+  display: grid;
+  place-items: center;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.76);
+  color: rgba(0, 0, 0, 0.979);
+  height: 100vh;
+}
+
+.about-center{
+  width: 80%;
+  max-width:800px ;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  color: black;
+}
+
+.about img{
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  margin-right: 1.3rem;
+  border: solid 5px rgba(167, 166, 166, 0.808);
+}
+
+.about-info{
+text-transform: capitalize;
+color: rgb(212, 212, 212);
+color: black;
+}
+
+.under{
+  width:80px;
+  height: 5px;
+  margin-top: -10px;
+  border-radius: 10%;
+  background: rgba(0, 0, 0, 0.651);
+}
+
+.about-info h3,.about-info h2{
+ margin-bottom: 0.5rem;
+ font-weight: 900;
+ text-transform: uppercase;
+ letter-spacing: 0.3rem;
+ 
+}
+
+.about-info p{
+  margin-top: 4rem;
+  font-size: 1.009rem;
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+@media screen and (min-width:800px){
+  .about-info{
+    font-size: 1.5rem;
+  }
+  .about img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    margin-right: 1.3rem;
+    ;
+  }
+  .about-info p{
+    font-size: 1.3rem
+  }
+  .under{
+    width:100px;
+    height: 5px;
+  
+  }
+}
+
+
+/* 
+=============
+ skills
+=============
+
+*/
+
+.skills{
+  width: 100%;
+  height: 100vh;
+  padding-top: 2rem;
+  background: rgba(255, 255, 255, 0.842);
+  display: grid;
+  place-items: center;
+}
+
+.skills h1{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.underline-skills{
+  background: black;
+  width: 100px;
+  height: 5px;
+  margin:1rem auto;
+}
+
+.skills-container{
+  margin-bottom: 4rem;
+  width: 85%;
+  padding: 1rem;
+}
+
+.skills-center{
+  width: 70%;
+  margin: 3rem auto;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.skills-center:hover{
+  box-shadow: 3px 2px 3px rgb(156, 151, 161);
+}
+
+.skills-icon{
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+.skills-rating{
+  position: relative;
+  background: rgba(177, 177, 177, 0.247);
+  height: 7px;
+  width: 300px;
+  /* border: solid 2px black; */
+  /* border-radius: 20%; */
+}
+
+.js::before{
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(42, 42, 43);
+  z-index: 2;
+}
+.html::before{
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(42, 42, 43);
+  z-index: 2;
+}
+.css::before{
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(42, 42, 43);
+  z-index: 2;
+}
+.react::before{
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(42, 42, 43);
+  z-index: 2;
+}
+
+footer{
+  text-align: center;
+  padding: 2rem;
+  color: aliceblue;
+}
