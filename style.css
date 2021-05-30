@@ -27,17 +27,14 @@ html{
   scroll-behavior: smooth;
 }
 
-.container{
-max-width: 100vw;
-/* display: grid;
-place-items: center; */
+  .container{
+    max-width: 100vw;
+    /* display: grid;
+    place-items: center; */
+    
+    }
 
-}
-
-
-
-
-
+    
 /* 
 =======
 navbar
@@ -99,33 +96,6 @@ header{
   font-weight: 600;
 }
 
-@media screen and (min-width:900px){
-  header{
-    width: 100%;
-    display: grid;
-    
-  /* place-items: center; */
-  grid-template-columns: 1fr 1fr;
-  height: auto;
-  }
-  .nav-icon{
-    display: none;
-  }
-  .nav-links{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: auto;
-    position: static;
-    list-style: none;
-    
-  }
-  .nav-links li{
-    font-size: 1rem;
-  }
-}
-
-
 
 .background{
   max-width: 100%;
@@ -152,30 +122,39 @@ header{
   height: 2px;
   background: rgb(212, 212, 212);
 }
-@media  screen and (min-width:900px) {
-  .underline{
-    width: 20%;
+
+ 
+
+
+@media screen and (min-width:900px){
+  header{
+    width: 100%;
+    display: grid;
+    
+  /* place-items: center; */
+  grid-template-columns: 1fr 1fr;
+  height: auto;
   }
+  .nav-icon{
+    display: none;
+  }
+  .nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    position: static;
+    list-style: none;
+    
+  }
+  .nav-links li{
+    font-size: 1rem;
+  }
+
+ 
 }
 
-.banner-image{
-  display: block;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: solid 5px rgb(212, 212, 212);
-  margin: 1rem auto;
-}
 
-.social-btn-container{
-  margin-top: 1rem;
-}
-
-.icon{
-  font-size: 2rem;
-  color: rgb(212, 212, 212) ;
-}
 
 /* 
 ===========
@@ -237,6 +216,37 @@ font-family: var(--font-1);
   line-height: 2;
 }
 
+
+
+
+
+@media  screen and (min-width:900px) {
+  .underline{
+    width: 20%;
+  }
+}
+
+.banner-image{
+  display: block;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: solid 5px rgb(212, 212, 212);
+  margin: 1rem auto;
+}
+
+.social-btn-container{
+  margin-top: 1rem;
+}
+
+.icon{
+  font-size: 2rem;
+  color: rgb(212, 212, 212) ;
+}
+
+
+
 @media screen and (min-width:950px){
   .about{
     display: grid;
@@ -266,7 +276,6 @@ font-family: var(--font-1);
   }
   
 }
-
 
 /* 
 =============
@@ -407,3 +416,6 @@ footer{
     transform: scale(1);
   }
 }
+    
+
+
