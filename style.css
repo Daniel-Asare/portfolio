@@ -136,7 +136,7 @@ header{
 
 
 .banner{
-  width: 100%;
+  max-width: 100%;
   text-align: center;
   text-transform: uppercase;
   color:rgb(212, 212, 212);
