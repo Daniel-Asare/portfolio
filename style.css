@@ -341,9 +341,14 @@ font-family: var(--font-1);
   position: relative;
   background: rgba(177, 177, 177, 0.247);
   height: 7px;
-  width: 200px;
+  width: 180px;
   /* border: solid 2px black; */
   /* border-radius: 20%; */
+}
+@media screen and (min-width:900px){
+  .skills-rating{
+    width: 400px;
+  }
 }
 
 .js::before{
