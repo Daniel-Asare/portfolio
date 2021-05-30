@@ -37,15 +37,7 @@ margin: 0;
 
 
 
-.background{
-  max-width: 100%;
-  display: grid;
-  place-items: center;
-  position: static;
-  height: 100vh;
-  /* background: linear-gradient(360deg,rgba(0, 0, 0, 0.438),rgba(0, 0, 0, 0.568)), url('https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') center/cover no-repeat ; */
 
-}
 
 /* 
 =======
@@ -136,11 +128,19 @@ header{
 
 
 
+.background{
+  max-width: 100%;
+  display: grid;
+  place-items: center;
+  position: static;
+  height: 100vh;
+  /* background: linear-gradient(360deg,rgba(0, 0, 0, 0.438),rgba(0, 0, 0, 0.568)), url('https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') center/cover no-repeat ; */
 
+}
 
 
 .banner{
-  max-width: 100%;
+  max-width: 80%;
   text-align: center;
   text-transform: uppercase;
   color:rgb(212, 212, 212);
