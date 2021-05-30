@@ -27,6 +27,10 @@ html{
   scroll-behavior: smooth;
 }
 
+.container{
+max-width: 100vw;
+}
+
 
 
 .background{

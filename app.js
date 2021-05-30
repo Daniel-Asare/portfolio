@@ -46,10 +46,8 @@ topLink.addEventListener('click',function(e){
   })
 })
 
-
-
+window.setTimeout(()=>{
 // close after click
-
 window.addEventListener('resize',function(){
   if(window.innerWidth <= 900){
     links.forEach((link)=>{
@@ -59,6 +57,9 @@ window.addEventListener('resize',function(){
     })
   }}
 )
+},1)
+
+
 
   
 
