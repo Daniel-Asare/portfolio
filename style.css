@@ -18,7 +18,8 @@ a{
   color: rgba(0, 0, 0, 0.658);
 }
 body{
- /* width: 100vw; */
+ max-width: 100vw;
+ 
   font-family: 'Courier New', Courier, monospace;
   background: rgba(17, 17, 17, 0.863);
 }
