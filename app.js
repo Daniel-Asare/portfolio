@@ -25,7 +25,7 @@ else{
 
 // toplink
 if(windowHeight > 300){
-  console.log('yes');
+  // console.log('yes');
   topLink.classList.add('top-link-visible')
 } else{
   topLink.classList.remove('top-link-visible')
@@ -44,17 +44,23 @@ topLink.addEventListener('click',function(e){
     top: pageOff,
     behavior:"smooth"
   })
-  navLinks.style.display = 'none'
 })
+
+
 
 // close after click
-links.forEach((link)=>{
-  link.addEventListener('click',function(){
-    console.log('love');
-  navLinks.classList.remove('nav-links-toggle')
-  })
-})
 
+window.addEventListener('resize',function(){
+  if(window.innerWidth <= 900){
+    links.forEach((link)=>{
+      link.addEventListener('click',function(){
+        navLinks.classList.remove('nav-links-toggle')
+      })
+    })
+  }}
+)
+
+  
 
 // date
 const date = document.querySelector('#date');
