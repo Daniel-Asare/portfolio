@@ -29,8 +29,9 @@ html{
 
 .container{
 max-width: 100vw;
-display: grid;
-place-items: center;
+/* display: grid;
+place-items: center; */
+
 }
 
 
@@ -183,12 +184,11 @@ header{
 */
 
 .about{
-  display: grid;
+  display: grid; 
   place-items: center;
-  /* grid-template-columns: 1fr; */
-  grid-template-rows: 1fr;
+  /* grid-template-rows: 1fr; */
   max-width: 100%;
-  height: 500px;
+  /* height: 500px; */
   background: rgba(255, 255, 255, 0.76);
   color: rgba(0, 0, 0, 0.979);
   height: 100vh;
@@ -198,7 +198,7 @@ header{
   width: 80%;
   display: grid;
   place-items: center;
-  max-width:800px ;
+  
   color: black;
 }
 
@@ -220,15 +220,6 @@ font-family: var(--font-1);
 
 }
 
-.under{
-  max-width: 100%;
-  width:80px;
-  height: 5px;
-  margin-top: -10px;
-  border-radius: 10%;
-  background: rgba(0, 0, 0, 0.651);
-  display: none;
-}
 
 .about-info h3,.about-info h2{
  margin-bottom: 0.5rem;
@@ -260,6 +251,7 @@ font-family: var(--font-1);
   .about-center{
     display: flex;
     justify-content: space-between;
+    max-width:800px ;
   }
   .about img{
     width: 300px;
@@ -272,11 +264,7 @@ font-family: var(--font-1);
     font-size: 1.2rem;
     text-align: left;
   }
-  .under{
-    width:100px;
-    height: 5px;
   
-  }
 }
 
 
