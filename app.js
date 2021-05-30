@@ -3,6 +3,7 @@ const navLinks = document.querySelector('.nav-links')
 const body = document.querySelector('body');
 const navbar = document.querySelector('header');
 const topLink = document.querySelector('.top-link')
+const links = document.querySelectorAll('.link')
 
 // navbar
 navBtn.addEventListener('click',function(){
@@ -43,7 +44,15 @@ topLink.addEventListener('click',function(e){
     top: pageOff,
     behavior:"smooth"
   })
-  console.log(scrollLink);
+  navLinks.style.display = 'none'
+})
+
+// close after click
+links.forEach((link)=>{
+  link.addEventListener('click',function(){
+    console.log('love');
+  navLinks.classList.remove('nav-links-toggle')
+  })
 })
 
 
