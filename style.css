@@ -258,12 +258,14 @@ font-family: var(--font-1);
   .about-info{
     font-size: 1.5rem;
     text-align: left;
+    max-width: 600px;
+    max-height: 400px;
   }
 
   .about-center{
     display: flex;
     justify-content: space-between;
-    max-width:800px ;
+    max-width:950px ;
   }
   .about img{
     width: 300px;
@@ -275,6 +277,7 @@ font-family: var(--font-1);
   .about-info p{
     font-size: 1.2rem;
     text-align: left;
+    
   }
   
 }
@@ -315,9 +318,9 @@ font-family: var(--font-1);
 }
 
 .skills-center{
-  width: 70%;
+  width: 100%;
   margin: 3rem auto;
-  max-width: 500px;
+  max-width: 600px;
   display: flex;
   align-items: center;
   justify-content: space-around;
