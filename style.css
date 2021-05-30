@@ -46,7 +46,7 @@ navbar
 */
 
 header{
-  width: 100%;
+  max-width: 100%;
   background: white;
   font-family: var(--font-1);
   position: relative;
